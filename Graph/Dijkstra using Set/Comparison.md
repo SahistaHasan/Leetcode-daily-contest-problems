@@ -43,12 +43,12 @@ while (!pq.isEmpty()) {
 
 ## ✅ Why TreeSet is Superior
 
-### 1. **No Duplicate Entries**
+### 1. **🔎 In contrast, with TreeSet
+TreeSet is a balanced BST and can remove an element in O(log V) if you give it the exact object.
+That’s why in TreeSet we can safely do:**
 ```java
-TreeSet set = new TreeSet<>(comparator);
-set.add(new Pair(1, 10));  // Node 1 with distance 10
-set.add(new Pair(1, 10));  // Ignored - duplicate not allowed
-set.add(new Pair(1, 5));   // Different distance, so allowed
+set.remove(new Pair(v, dist[v]));
+set.add(new Pair(v, newDist));
 ```
 
 ### 2. **Efficient Remove Operation**
